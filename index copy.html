@@ -36,49 +36,38 @@
          <iframe stytle="width:100%; aspect-ratio:16/9;"  src="https://www.youtube.com/embed/3nYLTiY5skU?si=FmlwVTYlyqWKZ3mR" title="YouTube video player" frameborder="0" 
          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
          allowfullscreen></iframe>
+         <!--nav lo usaremos para movernos por nuestra pagina y a sirve para poner los enlaces-->
+         <nav>
+            <a href="#experiencias">Experiencias</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#formulario">Formulario de contacto</a>
+            <!-- target="_blank" es para abrir una nueva ventana y rel="noreferrer" para no darle información a la siguiente pagina -->
+            <a href="https://twitch.tv/midudev" target="_blank" rel="noreferrer">Twitch</a>
+         </nav>
 
-         <dialog id="dialog">
-            <h1>Se puede abrir un modal</h1>
-            <p>Es totalmente nativo</p>
-            <button id="hide">Cerrar</button>
-         </dialog>
-
-         <script>
-            window.show.addEventListener('click',()=>{
-            window.dialog.showModal()
-            });
-            window.hide.addEventListener('click',()=>{
-            window.dialog.close()
-            })
-         </script>  
-
-         <div class="flex-space navBar">
-            <!--nav lo usaremos para movernos por nuestra pagina y a sirve para poner los enlaces-->
-            <nav class="flex-space navBar__nav">
-               <a class="navBar__nav-a" href="#experiencias">Experiencias</a>
-               <a class="navBar__nav-a" href="#proyectos">Proyectos</a>
-               <a class="navBar__nav-a" href="#formulario">Formulario de contacto</a>
-               <!-- target="_blank" es para abrir una nueva ventana y rel="noreferrer" para no darle información a la siguiente pagina -->
-               <a class="navBar__nav-a" href="https://twitch.tv/midudev" target="_blank" rel="noreferrer">Twitch</a>
-            </nav>
-            <button id="show" class="navBar__button">Ver más información</button>
-         </div>
       </header>
 
+      <dialog id="dialog">
+         <h1>Se puede abrir un modal</h1>
+         <p>Es totalmente nativo</p>
+         <button id="hide">Cerrar</button>
+      </dialog>
+      <button id="show">Ver más información</button>
 
-            
+      <script>
+         window.show.addEventListener('click',()=>{
+         window.dialog.showModal()
+         });
+         window.hide.addEventListener('click',()=>{
+         window.dialog.close()
+         })
+      </script>        
 
 
-      
+      <!--<video controls src="https://www.youtube.com/watch?v=3nYLTiY5skU"></video>-->
       <main>
-         <section class="presentation flex-center">
-            <img class="presentation__image-profile" id="foto-img" title="foto de JAG" src="essi.png" width="200rem" height="300rem" alt="foto de la esii">
-            <!--p es para hacer parrafos y strong para hacer en negrita-->
-            <p class="presentation__description"><strong>Ingeniero de Software</strong> con 0 años de experiencia</p>
-         </section>
-         
-         <video controls src="https://www.youtube.com/watch?v=3nYLTiY5skU"></video>
-
+         <!--p es para hacer parrafos y strong para hacer en negrita-->
+         <p><strong>Ingeniero de Software</strong> con 0 años de experiencia</p>
          <h2 id="experiencias"></h2>
          <!--ul es para hacer una lista no ordenada y li para poner los puntos -->
          <ul>
@@ -88,6 +77,7 @@
          <!-- img es un elemento reemplazable, no es necesario cerrarlo, el alt nos sirve para explicar que imagen iria en caso de que no aparecca,
          el title sirve para darle fuerza, hidden es para ocultar, id y class es para darle una identificación lo unico es que id es solo para uno y 
          class puede ser para varios  y para el tamaño tenemos width, ancho, y height, altura-->
+         <img id="foto-img" title="foto de JAG" src="essi.png" width="200" alt="foto de la esii">
          <aside>
             <header>
                <h3>Mis tecnologías <span> favoritas</span></h3>
